@@ -5,7 +5,7 @@
 }
 
 h1{
-	font-family: helvetica,Arial,sans-serif;
+	font-family: Apple Chancery, cursive,sans-serif;
 	text-align: center;
 	font-size: 175%;
 	margin: 15px;
@@ -18,8 +18,8 @@ div{
 section{
 	position: relative;
 	width: 100%;
-	height: 200px;
-	border: 1px solid black;
+	height: auto;			/**this height will work for mobile view***/
+	border: 4px solid black;
 	background-color: grey;
 }
 
@@ -30,8 +30,8 @@ h2{
 	font-size: 125%;
 	font-family: helvetica,sans-serif;
 	text-align: center;
-	border-left: 1px solid black;
-	border-bottom: 1px solid black;
+	border-left: 3px solid black;
+	border-bottom: 3px solid black;
 	padding: 2px 30px 2px 30px;
 }
 
@@ -51,27 +51,24 @@ h2{
 }
 
 p{
-	padding: 35px 10px 20px 10px;
+	padding: 40px 10px 20px 10px;
 	font-weight: 300;
-	width: 100%;
+	width: 100%;   
 	height: 100%;
-	text-align: center;
-	font-family: sans-serif;
+	text-align: left;
+	font-family: "Comic Sans MS",sans-serif;
 	overflow: hidden;
 }
+
 
 .row{
 	width: 100%;
 }
-
+/*********desktop view***********/
 @media (min-width: 992px){
 	.cl-lg-1,.cl-lg-2,.cl-lg-3,.cl-lg-4,.cl-lg-5,.cl-lg-6,.cl-lg-7,.cl-lg-8
 	,.cl-lg-9,.cl-lg-10,.cl-lg-11,.cl-lg-12{
 		float: left;
-	}
-
-	section{
-		height: 250px;
 	}
 
 	.cl-lg-1{
@@ -111,15 +108,11 @@ p{
 		width: 100%;
 	}
 }
-
+/************Tablet view*************/
 @media (min-width: 768px) and (max-width: 991px){
 	.cl-md-1,.cl-md-2,.cl-md-3,.cl-md-4,.cl-md-5,.cl-md-6,.cl-md-7,.cl-md-8
 	,.cl-md-9,.cl-md-10,.cl-md-11,.cl-md-12{
 		float: left;
-	}
-
-	 section{
-		height: 200px;
 	}
 
 	.cl-md-1{
