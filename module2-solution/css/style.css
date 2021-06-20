@@ -23,7 +23,7 @@ section{
 
 div.section{
   position: relative;
-  background-color: #0081B0;
+  background-color: grey;
   border: 1px solid black;
   overflow: hidden;
 }
